@@ -1,6 +1,14 @@
-# Memoteca
+# Projeto MemoTeca:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+
+Este projeto foi criado como parte do curso "Angular: aplique os conceitos e desenvolva seu primeiro CRUD!" na Alura. Nele, foi desenvolvido o MemoTeca, um mural de pensamentos onde você pode adicionar citações de livros, trechos de música e outras frases inspiradoras.
+
+## Como usar:
+
+O MemoTeca é uma aplicação completa onde você pode cadastrar, editar e excluir pensamentos. Na tela principal, você verá o título "Meu Mural" em azul e um botão "Adicionar Pensamento" logo abaixo. Ao clicar no botão, você será redirecionado para a tela de cadastro, onde poderá preencher os campos "Pensamento", "Autoria ou fonte" e "Modelo" e, em seguida, salvar o pensamento.
+
+Na tela principal, todos os pensamentos cadastrados serão exibidos em um cartão com as informações de pensamento, autor e modelo. Você pode editar um pensamento clicando no ícone de edição, e excluí-lo clicando no ícone de lixeira.
 
 ## Development server
 
