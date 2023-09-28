@@ -1,3 +1,4 @@
+import { PensamentoService } from './../services/pensamento-service.service';
 import { Component, OnInit } from '@angular/core';
 import { AppConstants } from 'src/app/constants/app-constants';
 import { Pensamento } from '../pensamento';
@@ -10,7 +11,17 @@ import { Pensamento } from '../pensamento';
 export class ListarPensamentoComponent implements OnInit {
   public listaPensamentos: Array<Pensamento> = [];
 
-  constructor() {}
+  constructor(private pensamentoService: PensamentoService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.listPensamentos();
+  }
+
+  public listPensamentos() {
+    this.pensamentoService
+      .listar()
+      .subscribe(async (response: Pensamento[]) => {
+        this.listaPensamentos = response;
+      });
+  }
 }

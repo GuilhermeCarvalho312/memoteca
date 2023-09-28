@@ -5,3 +5,7 @@ export const AppConstants = {
     MODELO_03: 'modelo3',
   },
 };
+
+export const API = {
+  url: 'http://localhost:3000/pensamentos',
+};

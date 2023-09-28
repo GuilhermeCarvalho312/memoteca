@@ -14,9 +14,27 @@
     },
     {
       "id": 3,
-      "conteudo": "Angular é o melhor'",
+      "conteudo": "Angular é o melhor",
       "autoria": "Dev Alura",
       "modelo": "modelo3"
+    },
+    {
+      "id": 4,
+      "conteudo": "A vida é uma jornada incrível",
+      "autoria": "Autor Desconhecido",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 5,
+      "conteudo": "Aprender algo novo a cada dia",
+      "autoria": "Estudante Curioso",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 6,
+      "conteudo": "O conhecimento é o tesouro da mente",
+      "autoria": "Filósofo Anônimo",
+      "modelo": "modelo1"
     }
   ]
 }
