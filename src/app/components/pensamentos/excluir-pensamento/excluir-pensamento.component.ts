@@ -20,7 +20,7 @@ export class ExcluirPensamentoComponent implements OnInit {
   constructor(
     private pensamentoService: PensamentoService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) {}
 
   ngOnInit(): void {
@@ -35,7 +35,7 @@ export class ExcluirPensamentoComponent implements OnInit {
         tap((pensamento) => {
           // Renomeie para 'pensamento'
           this.pensamento = pensamento;
-        })
+        }),
       )
       .subscribe();
   }

@@ -17,7 +17,7 @@ export class CriarPensamentoComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private pensamentoService: PensamentoService
+    private pensamentoService: PensamentoService,
   ) {}
 
   ngOnInit(): void {}

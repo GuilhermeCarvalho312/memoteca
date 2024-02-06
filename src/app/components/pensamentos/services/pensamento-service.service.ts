@@ -28,7 +28,7 @@ export class PensamentoService {
   }
 
   public buscarPensamentoPorId(
-    id: string | number | null
+    id: string | number | null,
   ): Observable<Pensamento> {
     const getUrlId = `${API.url}/${id}`;
 
