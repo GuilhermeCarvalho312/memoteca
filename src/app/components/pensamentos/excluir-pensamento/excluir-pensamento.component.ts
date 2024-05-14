@@ -2,7 +2,7 @@ import { Pensamento } from './../pensamento';
 import { Component, OnInit } from '@angular/core';
 import { PensamentoService } from '../services/pensamento-service.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable, tap } from 'rxjs';
+import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-excluir-pensamento',
