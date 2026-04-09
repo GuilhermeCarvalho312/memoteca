@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * Componente que renderiza o rodapé padrão da aplicação.
+ * 
+ * @author CarvalhoDev
+ */
 @Component({
   selector: 'app-rodape',
   templateUrl: './rodape.component.html',

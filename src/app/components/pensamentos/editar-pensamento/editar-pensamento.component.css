@@ -1,0 +1,57 @@
+.editar-pensamentos {
+    padding: 2rem 0;
+}
+
+.editar-pensamentos form {
+    background: #c4edff;
+    border: none;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.editar-pensamentos form label {
+    color: #154580;
+    font-weight: bold;
+    margin: 0 0 0.5rem;
+}
+
+.editar-pensamentos form .input,
+.editar-pensamentos form .textarea {
+    height: 2.5rem;
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    margin: 0.5rem 0 2rem;
+}
+
+.bloco-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: #154580;
+}
+
+.cabecalho h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.botao {
+    margin: 0.3125rem;
+    margin-top: 1.875rem;
+    width: 12.5rem;
+}

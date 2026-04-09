@@ -14,8 +14,8 @@
 
 h1 {
   position: absolute;
-  height: 1px;
-  width: 1px;
+  height: 0.0625rem;
+  width: 0.0625rem;
   overflow: hidden;
 }
 
@@ -42,37 +42,37 @@ h2 {
 .botao {
   background: #154580;
   color: #ffffff;
-  max-width: 270px;
-  width: 250px;
+  max-width: 16.875rem;
+  width: 15.625rem;
   padding: 1rem;
   margin: 0 auto;
-  border: 2px solid #154580;
-  border-radius: 10px;
+  border: 0.125rem solid #154580;
+  border-radius: 0.625rem;
   transition: 0.5s ease;
 }
 
 .botao:hover {
-  border: 2px solid #84eec1;
+  border: 0.125rem solid #84eec1;
   color: #84eec1;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
   .container {
-    width: 540px;
+    width: 33.75rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .container {
-    width: 720px;
+    width: 45rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .container {
-    width: 960px;
+    width: 60rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .container {
-    width: 1140px;
+    width: 71.25rem;
   }
 }

@@ -4,6 +4,11 @@ import { PensamentoService } from '../services/pensamento-service.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { tap } from 'rxjs';
 
+/**
+ * Componente dedicado à tela de confirmação e exclusão de um pensamento.
+ * 
+ * @author CarvalhoDev
+ */
 @Component({
   selector: 'app-excluir-pensamento',
   templateUrl: './excluir-pensamento.component.html',
@@ -27,6 +32,9 @@ export class ExcluirPensamentoComponent implements OnInit {
     this.getPensamentoPorId();
   }
 
+  /**
+   * Busca na API o pensamento atual baseando-se no ID presente na URL.
+   */
   public getPensamentoPorId(): void {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.pensamentoService
@@ -44,6 +52,9 @@ export class ExcluirPensamentoComponent implements OnInit {
     // Implemente a lógica para cancelar aqui, se necessário.
   }
 
+  /**
+   * Solicita a deleção do pensamento identificado pela tela atual e redireciona.
+   */
   public excluirPensamento() {
     if (this.pensamento.id) {
       this.pensamentoService

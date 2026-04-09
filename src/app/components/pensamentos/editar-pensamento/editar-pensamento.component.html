@@ -1,1 +1,22 @@
-<p>editar-pensamento works!</p>
+<section class="container editar-pensamentos ff-inter">
+    <form [formGroup]="formulario">
+        <div class="cabecalho">
+            <h3>Pensamento</h3>
+            <img src="/assets/imagens/{{ formulario.get('modelo')?.value }}.png" alt="Aspas Coloridas" />
+        </div>
+        <div class="bloco-input">
+            <label for="pensamento">Pensamento</label>
+            <input type="textarea" class="input" id="pensamento" name="pensamento" formControlName="conteudo"
+                placeholder="Digite o pensamento" />
+        </div>
+        <div class="bloco-input">
+            <label for="autoria">Autoria</label>
+            <input type="text" class="input" id="autoria" name="autoria" formControlName="autoria"
+                placeholder="Digite a autoria" />
+        </div>
+        <div class="botoes">
+            <button class="botao" (click)="cancelar()">Cancelar</button>
+            <button class="botao" (click)="editarPensamento()">Salvar</button>
+        </div>
+    </form>
+</section>

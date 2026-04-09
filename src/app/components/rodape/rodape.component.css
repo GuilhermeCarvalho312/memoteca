@@ -3,7 +3,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 0rem 0rem;
   grid-template-areas: "TextoCopyright LogoRodape .";
   align-items: center;
   padding: 1rem 2rem;
@@ -23,7 +23,7 @@ footer small {
   color: white;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36rem) {
   .cabecalho .logo {
     padding: 2rem;
   }
@@ -33,7 +33,7 @@ footer small {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   footer {
     display: flex;
     flex-direction: column-reverse;

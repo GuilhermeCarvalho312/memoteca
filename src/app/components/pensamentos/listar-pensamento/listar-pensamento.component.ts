@@ -3,6 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { AppConstants } from 'src/app/constants/app-constants';
 import { Pensamento } from '../pensamento';
 
+/**
+ * Componente responsável por buscar e renderizar a lista de pensamentos da API no mural em tela.
+ * 
+ * @author CarvalhoDev
+ */
 @Component({
   selector: 'app-listar-pensamento',
   templateUrl: './listar-pensamento.component.html',
@@ -17,6 +22,9 @@ export class ListarPensamentoComponent implements OnInit {
     this.listPensamentos();
   }
 
+  /**
+   * Assina o serviço de busca para resgatar e armazenar a listagem original.
+   */
   public listPensamentos() {
     this.pensamentoService
       .listar()

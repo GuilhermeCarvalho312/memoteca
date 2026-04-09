@@ -1,17 +1,17 @@
 .modal {
   background: #fff;
-  box-shadow: 7px 8px 0px 0px #154580;
-  min-width: 360px;
-  min-height: 150px;
+  box-shadow: 0.4375rem 0.5rem 0rem 0rem #154580;
+  min-width: 22.5rem;
+  min-height: 9.375rem;
   position: fixed;
   left: 50%;
-  padding: 24px;
+  padding: 1.5rem;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 11;
   font-size: 1.5rem;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 
 .overlay {
@@ -30,38 +30,38 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .botao {
-  margin: 5px;
-  margin-top: 70px;
-  width: 200px;
+  margin: 0.3125rem;
+  margin-top: 4.375rem;
+  width: 12.5rem;
 }
 
 .botao-cancelar {
   border: none;
   cursor: pointer;
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-right: 0.625rem;
+  margin-top: 0.625rem;
 }
 
 .botao-excluir {
   border: none;
   cursor: pointer;
-  margin-left: 5px;
-  margin-top: 10px;
+  margin-left: 0.3125rem;
+  margin-top: 0.625rem;
 }
 
 .excluir-pensamentos {
   padding: 10rem 0;
 }
 
-@media screen and (max-width: 548px) {
+@media screen and (max-width: 34.25rem) {
   .modal {
     width: 90%;
     min-width: 90%;
-    padding: 50px 12px 24px;
+    padding: 3.125rem 0.75rem 1.5rem;
     font-size: 1.2rem;
   }
 }

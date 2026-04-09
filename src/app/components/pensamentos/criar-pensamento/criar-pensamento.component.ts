@@ -4,6 +4,11 @@ import { PensamentoService } from '../services/pensamento-service.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { lowerCaseValidator } from 'src/app/validators/lowercase.validator';
 
+/**
+ * Componente para o formulário de criação de novos pensamentos.
+ * 
+ * @author CarvalhoDev
+ */
 @Component({
   selector: 'app-criar-pensamento',
   templateUrl: './criar-pensamento.component.html',
@@ -16,12 +21,15 @@ export class CriarPensamentoComponent implements OnInit {
     private router: Router,
     private pensamentoService: PensamentoService,
     private formBuilder: FormBuilder,
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.formConstructor();
   }
 
+  /**
+   * Monta o formulário reativo acoplando as requisições de validação em cada input.
+   */
   formConstructor() {
     this.formulario = this.formBuilder.group({
       conteudo: [
@@ -46,8 +54,10 @@ export class CriarPensamentoComponent implements OnInit {
   cancelar() {
     this.router.navigate(['/listarPensamento']);
   }
+  /**
+   * Valida o formulário no submit e o envia para ser persistido via API.
+   */
   criarPensamento() {
-    debugger;
     console.log(this.formulario.status);
     if (this.formulario.valid) {
       this.pensamentoService.criar(this.formulario.value).subscribe(() => {
